@@ -7,13 +7,11 @@ import { RoomProvider } from "./context";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-    <React.StrictMode>
-        <RoomProvider>
-            <BrowserRouter>
-                <App />
-            </BrowserRouter>
-        </RoomProvider>
-    </React.StrictMode>,
+    <RoomProvider>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </RoomProvider>,
     document.getElementById('root')
 );
 
